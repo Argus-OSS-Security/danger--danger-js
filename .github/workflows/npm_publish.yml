@@ -3,12 +3,13 @@ name: Publish danger to npm
 # Pushing a version tag is the deploy trigger. Who can create tags is
 # restricted by the "Release tags" repository ruleset, so that ruleset's
 # bypass list is the list of people who can ship a release.
-on:
-  push:
-    tags:
-      - "[0-9]+.[0-9]+.[0-9]+"
-      - "[0-9]+.[0-9]+.[0-9]+-*"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     tags:
+#       - "[0-9]+.[0-9]+.[0-9]+"
+#       - "[0-9]+.[0-9]+.[0-9]+-*"
+# 
 permissions:
   contents: read
   id-token: write # npm trusted publishing

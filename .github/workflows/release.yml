@@ -1,12 +1,13 @@
 name: Release executable files for macOS
 
-on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: "Version to deploy assets for"
-        required: true
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       version:
+#         description: "Version to deploy assets for"
+#         required: true
+# 
 jobs:
   release:
     runs-on: ubuntu-latest

@@ -1,12 +1,13 @@
 name: Release Danger-JS package
 
-on:
-  push:
-    branches:
-      - 'main'
-    tags:
-      - '*'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - 'main'
+#     tags:
+#       - '*'
+# 
 permissions:
   contents: read
   packages: write
